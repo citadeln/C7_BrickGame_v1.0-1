@@ -1,0 +1,13 @@
+digraph "TetGame"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="TetGame",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" tetg" ,fontname="Helvetica"];
+  Node2 [label="GameInfo_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structGameInfo__t.html",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" figure" ,fontname="Helvetica"];
+  Node3 [label="TetFigure",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structTetFigure.html",tooltip=" "];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" player" ,fontname="Helvetica"];
+  Node4 [label="TetPlayer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structTetPlayer.html",tooltip=" "];
+}
