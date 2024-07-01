@@ -55,10 +55,11 @@ void make_start() {
 void start_ncurses() {
   initscr();
   start_color();
-  init_pair(1, COLOR_WHITE, COLOR_CYAN);  // первая цветовая пара для текста и
-                                          // соответствующего ему цветового фона
-  init_pair(2, COLOR_GREEN, COLOR_BLUE);
-  init_pair(3, COLOR_GREEN, COLOR_BLACK);
+  init_pair(1, COLOR_WHITE,
+            COLOR_YELLOW);  // первая цветовая пара для текста и
+                            // соответствующего ему цветового фона
+  init_pair(2, COLOR_GREEN, COLOR_BLACK);
+  init_pair(3, COLOR_GREEN, COLOR_BLUE);
   cbreak();  // строковый буфер, принуждает к немедленному выводу символа
              // нажатой клавиши
   noecho();  // отключает вывод символа нажатой клавиши на экран
